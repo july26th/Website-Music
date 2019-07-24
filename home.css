@@ -311,8 +311,30 @@ ul, p {
 
 
 /* --CSS Listening Most -- */
-
-
+#myDiv {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#myDiv .btn {
+  width: 33.3%;
+  height: 100%;
+  outline: none;
+  padding: 10px 4px 10px 0px;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+#myDiv .btn:focus {
+	box-shadow: none
+}
+#myDiv .active, #myDiv .btn:hover {
+  color: #FC4B6D;	
+  border-bottom: 2px solid #FC4B6D; 
+  border-radius: 0;
+}
 .listening-item {
 	display: flex;
 	padding: 12px 0px;
@@ -361,4 +383,44 @@ ul, p {
 }
 .chart-number font {
 	font-size: 18px;
+}
+
+
+/* --CSS Top 100 -- */
+.top100 {
+	margin-top: 70px;
+	border: 1px solid #9e2c2c;
+}
+.top100-head {
+	background-color: #9e2c2c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8px;
+	position: relative;
+}
+.top100-head h4 {
+	color: #fff;
+	padding: 4px 0px;
+}
+.new-logo {
+	position: absolute;
+	right: -30px;
+	top: -32px;
+}
+.top100-item {
+	padding: 0px 10px;
+}
+.top100 .title-item {
+	font-size: 14px;
+	word-break: normal;
+}
+.top100-box {
+	position: relative;
+	padding-bottom: 34px;
+}
+.top100 .top100-all {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }

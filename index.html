@@ -994,6 +994,12 @@
 									<span class="see-all"><a href="">Nghe tất cả</a>
 									</span>
 								</div>
+								<div id="myDIV">
+
+								  <button class="btn active">Việt Nam</button>
+								  <button class="btn ">Âu Mỹ</button>
+								  <button class="btn">Hàn Quốc</button>
+								</div>
 								<div class="listening-item">
 									<div class="item-img img-number-one">
 										<font class="number-1" color=red>1</font>
@@ -1154,6 +1160,65 @@
 								</div>
 							</div>
 					</div>
+					<div class="top100">
+						<a href=""><div class="top100-head">
+							<div class="logo-page"><img src="https://chiasenhac.vn/imgs/logo-web-official.png" alt=""></div>
+							<div><h4>TOP 100 BÀI HÁT</h4></div>
+							<div class="new-logo"><img src="https://stc-id.nixcdn.com/v11/images/flower.png" alt=""></div>
+						</div>
+						<div class="top100-box">
+								<div class="listening-item">
+									<div class="item-img">
+										<a href=""><img src="http://lorempixel.com/56/56/" alt=""></a>
+										</a>
+									</div>
+									<div class="new-info">
+										<p><a href="" class="title-item">Top 100 R&B/Hip Hop/Rap Hay Nhất</a></p>
+									</div>
+								</div>
+								<div class="listening-item">
+									<div class="item-img">
+										<a href=""><img src="http://lorempixel.com/56/56/" alt=""></a>
+										</a>
+									</div>
+									<div class="new-info">
+										<p><a href="" class="title-item">Top 100 Nhạc Hoa Hay Nhất</a></p>
+									</div>
+								</div>
+								<div class="listening-item">
+									<div class="item-img">
+										<a href=""><img src="http://lorempixel.com/56/56/" alt=""></a>
+										</a>
+									</div>
+									<div class="new-info">
+										<p><a href="" class="title-item">Top 100 Nhạc Âu Mỹ Hay Nhất</a></p>
+									</div>
+								</div>
+								<div class="listening-item">
+									<div class="item-img">
+										<a href=""><img src="http://lorempixel.com/56/56/" alt=""></a>
+										</a>
+									</div>
+									<div class="new-info">
+										<p><a href="" class="title-item">Top 100 Nhạc Không Lời Hay Nhất</a></p>
+									</div>
+								</div>
+								<div class="listening-item">
+									<div class="item-img">
+										<a href=""><img src="http://lorempixel.com/56/56/" alt=""></a>
+										</a>
+									</div>
+									<div class="new-info">
+										<p><a href="" class="title-item">Top 100 Nhạc Hàn Hay Nhất</a></p>
+									</div>
+								</div>
+								<div class="top100-all">
+									<h4>Xem tất cả TOP 100</h4>
+								</div>
+						
+						</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1161,5 +1226,17 @@
 	<footer>
 		
 	</footer>
+	<script>
+		var btnContainer = document.getElementById("myDIV");
+		var btns = btnContainer.getElementsByClassName("btn");
+
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
 </body>
 </html>
