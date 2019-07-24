@@ -1,6 +1,6 @@
 ul, p {
 	padding: 0;
-	margin: 0;
+	margin: 0 !important;
 }
 .clear {
 	clear:  both;
@@ -168,15 +168,23 @@ ul, p {
 	row-gap: 24px; 
 }
 }
+.new-info a{
+	color: #000;
+}
 .new-list a {
 	display: block;
-	color: #000;
+	
 	margin-bottom: 8px;
 }
-.new a:hover {
+.new-info a:hover {
 	text-decoration: none;
 	color:  #FC4B6D;
 	font-weight: 500;
+}
+.new-image, .item-img {
+	border-radius: 4px;
+	margin-right: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .new-image {
 	width: 150px;
@@ -184,9 +192,6 @@ ul, p {
 	background-image: url('http://lorempixel.com/150/150/');
 	background-size: cover;
 	background-position: center;
-	border-radius: 4px;
-	margin-right: 10px;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .overlay{
 	font-size: 52px;
@@ -246,15 +251,23 @@ ul, p {
 .new-list-video .big-video-image {
 	width: 100% !important;
 	height: 100% !important;
+	position: relative;
 	background-image: url('http://lorempixel.com/300/220/');
 }
 .big-video-info {
 	width: 100%;
+
 }
 .big-video-info .new-info {
 	display: inline-block;
 }
-
+.big-new-info{
+	position: absolute;
+	bottom: 0;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+}
 
 .big-video-info{
 	position: absolute;
@@ -270,17 +283,14 @@ ul, p {
 	background-color: #000;
     padding: 2px;
     font-size: 14px;
-    
+   
 }
-.big-video-info .new-info {
-
-}
-.big-video-info .title-item {
+.big-new-info .title-item {
 	color: #fff;
 	font-size: 18px;
 	margin: 0;
 }
-.big-video-info .singer-name {
+.big-new-info .singer-name {
 	color: #c7c7c7 !important;
 }
 .small-video-time {
@@ -291,4 +301,43 @@ ul, p {
 	align-items: flex-end;
 	height: 100%;
     width: 100%;
+}
+
+
+
+/* --CSS Listening Most -- */
+.small-image{
+	width: 100%;
+	height: 100%;
+	background-image: url('http://lorempixel.com/30/30/');
+}
+
+.listening-item {
+	display: flex;
+	padding: 12px 0px;
+	border-top: 1px solid #dedede;
+}
+.most-listening:last-child {
+	border-bottom: 1px solid #dedede;
+}
+.listening-item .new-info{
+	flex-grow: 1;
+}
+.listening-item .list-inline-item {
+	display: none;
+	padding-right: 8px;
+}
+.views, .list-inline-item {
+	padding-top: 14px;
+	padding-right: 6px;	
+}
+.views, .list-inline-item a {
+	font-size: 13px;
+	color: #968e8e;
+}
+.listening-item:hover .views{
+	display: none;
+}
+.listening-item:hover .list-inline-item{
+	display: inline-block ;
 }
