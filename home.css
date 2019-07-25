@@ -5,6 +5,9 @@ ul, p {
 .clear {
 	clear:  both;
 }
+a:hover {
+	text-decoration: none !important;
+}
 /* CSS Header */
 
 .header-top {
@@ -137,10 +140,13 @@ ul, p {
 	position: relative;
 	margin-bottom: 6px;
 }
-.new-title .title a {
+.title a {
 	color: #FC4B6D;
 	font-weight: 600;
 	font-size: 24px;
+}
+.title a:hover {
+	color: #f53459;
 }
 .see-all>a{
 	float: right;
@@ -199,7 +205,7 @@ ul, p {
 	font-size: 52px;
 	color: #fff;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -241,7 +247,7 @@ ul, p {
 .new-list-video .new-image {
 	width: 100%;
 	height: 100%;
-	background-image: url('http://lorempixel.com/150/150/');
+	background-image: url('http://lorempixel.com/180/150/');
 }
 .new-list-video .small-video-image {
 	height: 70%;
@@ -340,6 +346,9 @@ ul, p {
 	padding: 12px 0px;
 	border-top: 1px solid #dedede;
 }
+.most-listening {
+	padding-right: 20px !important;
+}
 .most-listening:last-child {
 	border-bottom: 1px solid #dedede;
 }
@@ -388,11 +397,14 @@ ul, p {
 
 /* --CSS Top 100 -- */
 .top100 {
-	margin-top: 70px;
-	border: 1px solid #9e2c2c;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border: 2px solid #b70919;
+	border-radius: 4px;
+	box-shadow: 0 3px 8px rgba(3,3,3,0.26);
 }
 .top100-head {
-	background-color: #9e2c2c;
+	background-color: #b70919;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -421,6 +433,75 @@ ul, p {
 }
 .top100 .top100-all {
 	position: absolute;
-	width: 100%;
+	width: auto;
 	bottom: 0;
+	right: 0;
+	padding: 4px 10px;
+	background-color: #b70919;
+}
+.top100-all h4 {
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+}
+.top100 .item-img {
+	margin-left: 10px;
+}
+
+
+
+
+/* -- CSS Hot Singers */
+
+
+.list-hot-singers {
+	margin-top: 10px;
+	display: grid;
+    grid-template-columns: repeat(3, 90px);
+	grid-template-rows: repeat(6, 95px);
+	row-gap: 10px; 
+	column-gap: 10px;
+}
+.hot-singers-item {
+	height: 100%;
+}
+.hot-most {
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+.img-hot {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.list-hot-singers .big {
+	font-size: 26px;
+}
+.hot-singer-name {
+	position: absolute;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #dee2e6;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+.img-hot:hover .hot-singer-name {
+	opacity: 1;
+}
+
+.img-hot:hover .hot-singer-name{
+	transform: scale(1);
 }
