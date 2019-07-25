@@ -1143,7 +1143,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 p-0">
 					<div class="song-chart">
-						<div class="most-listening">
+						<div class="most-listening p-0">
 								<div class="new-title">
 									<span class="title"><a href="">Bảng Xếp Hạng</a></span>
 									<span class="see-all"><a href="">Nghe tất cả</a>
@@ -1151,7 +1151,7 @@
 								</div>
 								<div id="myDIV">
 
-								  <button class="btn active">Việt Nam</button>
+								  <button class="btn chart-active">Việt Nam</button>
 								  <button class="btn ">Âu Mỹ</button>
 								  <button class="btn">Hàn Quốc</button>
 								</div>
@@ -1464,6 +1464,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script type="text/javascript">
+		var btnContainer = document.getElementById("myDIV");
+		var btns = btnContainer.getElementsByClassName("btn");
+
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("chart-active");
+		    current[0].className = current[0].className.replace(" chart-active", "");
+		    this.className += " chart-active";
+		  });
+		}
+		$( document ).ready(function() {
+
 		$('.main-carousel').owlCarousel({
 	    loop:true,
 	    margin:0,
@@ -1494,6 +1506,7 @@
 	    nav:false,
 	    autoplay:false,
 	    autoplayTimeout:5000,
+	    stagePadding: 100,
 	    autoplayHoverPause: true,
 	    responsiveClass:true,
 	    responsive:{
@@ -1501,9 +1514,9 @@
 	            items:1,
 	            slideBy: 1
 	        },
-	        600:{
-	            items:3,
-	            slideBy: 3
+	        700:{
+	            items:2,
+	            slideBy: 2
 	        },
 	        1000:{
 	            items:3,
@@ -1512,16 +1525,9 @@
 	        }
 	    }
 	})
-		var btnContainer = document.getElementById("myDIV");
-		var btns = btnContainer.getElementsByClassName("btn");
 
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		    var current = document.getElementsByClassName("active");
-		    current[0].className = current[0].className.replace(" active", "");
-		    this.className += " active";
-		  });
-		}
+});
+		
 	</script>
 </body>
 </html>

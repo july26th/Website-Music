@@ -188,9 +188,10 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 
 .topic-slider {
 	margin: 20px 0px;
+	padding-right: 20px;
 }
 .item .topic-item {
-	width: 100px;
+	width: 100%;
 	height: 100px;
 }
 
@@ -398,7 +399,7 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 #myDiv .btn:focus {
 	box-shadow: none
 }
-#myDiv .active, #myDiv .btn:hover {
+#myDiv .chart-active, #myDiv .btn:hover {
   color: #FC4B6D;	
   border-bottom: 2px solid #FC4B6D; 
   border-radius: 0;
@@ -409,7 +410,7 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 	border-top: 1px solid #dedede;
 }
 .most-listening {
-	padding-right: !important;
+	padding-right: 20px !important;
 }
 .most-listening:last-child {
 	border-bottom: 1px solid #dedede;
