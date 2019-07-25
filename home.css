@@ -5,6 +5,9 @@ ul, p {
 .clear {
 	clear:  both;
 }
+a {
+	text-decoration: none;
+}
 a:hover {
 	text-decoration: none !important;
 }
@@ -198,7 +201,12 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 
 
 
-
+.new {
+	margin-bottom: 20px;
+}
+.new-video {
+	margin-top: 20px;
+}
 .new-title {
 	position: relative;
 	margin-bottom: 6px;
@@ -258,8 +266,8 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .new-image {
-	width: 150px;
-	height: 150px;
+	width: 145px;
+	height: 140px;
 	background-image: url('http://lorempixel.com/150/150/');
 	background-size: cover;
 	background-position: center;
@@ -304,7 +312,7 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 }	
 .new-list-video .new-items {
 	position: relative;
-	height: 220px;
+	height: 200px;
 	margin-right: 14px;
 }
 .new-list-video .new-image {
@@ -567,4 +575,66 @@ background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 
 
 .img-hot:hover .hot-singer-name{
 	transform: scale(1);
+}
+
+
+
+/* -- CSS Footer -- */
+.main-footer {
+	background-color: #282828;
+	padding-top: 20px;
+}
+.footer-title {
+	color: #fff;
+	font-weight: 500;
+	padding: 20px 0px;
+	display: block;
+}
+.footer-list ul li {
+	width: 50%;
+	float: left;
+	padding-left: 30px;
+	margin-bottom: 16px;
+}
+.footer-list a, .more-footer p{
+	color: #a9a9a9;
+	font-size: 14px;
+}
+.fa-facebook-square {
+	color: #3B5999;
+	font-size: 24px;
+}
+.fa-instagram {
+	color: #fb07ff;
+	font-size: 24px;
+}
+.social {
+	width: 30%;	
+	margin-top: -6px;
+	float: left;
+}
+.socal-icon {
+	padding: 0px 4px;
+}
+.app {
+	width: 70%;
+	display: inline-block;
+}
+.download-app {
+	width: 40%;
+	height: 30px;
+	margin: -14px 4px 0px 0px; 
+}
+footer hr {
+	border-color: #dcdbdb;
+}
+.footer-logo {
+	padding-top: 50px;
+}
+.bct {
+	width: 100px;
+	height: 60px;
+}
+.certi-icon {
+	margin-top: 40px;
 }
