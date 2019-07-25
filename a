@@ -1,0 +1,65 @@
+[33mcommit 24eb4501bdff1db9c5654b46c2082a8f9b70da8a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Thu Jul 25 14:16:54 2019 +0700
+
+    add hot singers and fix bugs
+
+[33mcommit 5077f4d473ccb6dc615e70b10326c15842434e2e[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Thu Jul 25 01:43:24 2019 +0700
+
+    add top 100 box
+
+[33mcommit 746b5e0adbfd97d09f7ca4949d8f1cfaf1823b20[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Wed Jul 24 22:42:53 2019 +0700
+
+    add chart-list
+
+[33mcommit bab6319eee38021d1ef342abe891d48a1d61b2ed[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Wed Jul 24 20:28:11 2019 +0700
+
+    fix bugs and and listen-most & download-most
+
+[33mcommit dd85f51bc8fe4b118958b01941e0cbd78be8fe5d[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Wed Jul 24 14:50:44 2019 +0700
+
+    add timing title and fix bugs
+
+[33mcommit 8ed302a728617ed397517475de0f5e16a89d89a1[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Wed Jul 24 01:43:12 2019 +0700
+
+    add new album & new video
+
+[33mcommit f5a2f2df796d82f1bcf566961686c2d31534c801[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Wed Jul 24 01:19:59 2019 +0700
+
+    add new songs list and fix bug menu
+
+[33mcommit bdd4c823300456e77e49be9aad4062fea84f1e00[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Tue Jul 23 23:05:38 2019 +0700
+
+    add sub-navbar
+
+[33mcommit b8e2790636751252d3d130b7426311aa7a5b27d9[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Tue Jul 23 21:53:04 2019 +0700
+
+    add navbar
+
+[33mcommit a735fd4a135c202683b22211b45d93b282b48108[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Tue Jul 23 19:41:20 2019 +0700
+
+    add header-top
+
+[33mcommit 5e8bafd906d55cb6500720b488d18b686b9e4488[m
+Author: july26th <hien.tran.nmmt@gmail.com>
+Date:   Tue Jul 23 18:48:44 2019 +0700
+
+    create project

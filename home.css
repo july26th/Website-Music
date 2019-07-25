@@ -134,7 +134,69 @@ a:hover {
 
 
 
-/* -- CSS Main */
+/* -- CSS Main -- */
+
+
+
+/* -- CSS Slider -- */
+.main-slider {
+	background: rgb(215,222,219);
+background: linear-gradient(180deg, rgba(215,222,219,1) 0%, rgba(236,210,210,1) 5%, rgba(240,232,232,1) 43%, rgba(255,255,255,1) 100%);
+}
+.main-slider .owl-carousel {
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-bottom: 40px;
+}
+
+.item-info {
+	width: 290px;
+	height: 270px !important;
+	position: relative;
+	height: 100%;
+	margin-left: 10px;
+}
+.main-slider .item img{
+	height: 100%;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,.125);
+}
+.item .banner-overlay {
+	position: absolute;
+	color: #fff;
+	height: 100%;
+	font-size: 52px;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.main-slider .item:hover .banner-overlay:hover {
+	opacity: 1;
+	border-radius: 10px;
+
+} 
+.item .new-info a{
+	display: block;
+	padding: 14px 10px 0px 14px;
+}
+
+.topic-slider {
+	margin: 20px 0px;
+}
+.item .topic-item {
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
 
 .new-title {
 	position: relative;
@@ -347,7 +409,7 @@ a:hover {
 	border-top: 1px solid #dedede;
 }
 .most-listening {
-	padding-right: 20px !important;
+	padding-right: !important;
 }
 .most-listening:last-child {
 	border-bottom: 1px solid #dedede;
